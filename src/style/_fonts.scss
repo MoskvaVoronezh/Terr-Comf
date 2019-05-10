@@ -1,0 +1,81 @@
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto-Regular.eot');
+	src: local('Roboto'), local('Roboto-Regular'),
+		 url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/Roboto-Regular.woff') format('woff'),
+		 url('../fonts/Roboto-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto-Medium.eot');
+	src: local('Roboto'), local('Roboto-Medium'),
+		 url('../fonts/Roboto-Medium.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/Roboto-Medium.woff') format('woff'),
+		 url('../fonts/Roboto-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto-Bold.eot');
+	src: local('Roboto Bold'), local('Roboto-Bold'),
+		 url('../fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/Roboto-Bold.woff') format('woff'),
+		 url('../fonts/Roboto-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url("../fonts/Montserrat-Bold.eot");
+	src: local('Montserrat'), local('Montserrat-Bold'),
+		url('../fonts/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Montserrat-Bold.woff') format('woff'),
+		url('../fonts/Montserrat-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-Black.eot');
+	src: local('Montserrat Black'), local('Montserrat-Black'),
+		url('../fonts/Montserrat-Black.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Montserrat-Black.woff') format('woff'),
+		url('../fonts/Montserrat-Black.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@mixin robotoRegular {
+	font-family: 'Roboto', sans-serif;
+	font-weight: normal;
+}
+
+@mixin robotoBold {
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+}
+
+@mixin robotoMedium {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+}
+
+@mixin montserratBold {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+}
+
+@mixin montserratBlack {
+	font-family: 'Montserrat';
+	font-weight: 900;
+	font-style: normal;
+}
+
