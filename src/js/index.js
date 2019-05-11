@@ -15,4 +15,9 @@ $( document ).ready(function() {
 		arrows: false,
 		dots: false
 	});
+
+	$(".fancybox").fancybox({
+		openEffect: 'elastic',
+		closeEffect: 'elastic'
+	});
 });
