@@ -378,7 +378,7 @@
 					</div>
 				</div>
 			</section>
-			<div class="banner ">
+			<div class="banner">
 				<div class="banner-slider">
 					<div class="banner-slider__item" style="background: url('./img/bg.jpg')">
 						<div class="container">
@@ -471,14 +471,524 @@
 				</div>
 			<div>
 			<section class="calculator">
-				<h2 class="calculator__title">Калькулятор расчета</h2>
-				<div class="calc">
-					
+				<div class="container">
+					<div class="calc-wrapper">
+						<h2 class="calculator__title section__title">Калькулятор расчета</h2>
+						<div class="calc">
+							<ul class="nav nav-tabs" id="myTab" role="tablist">
+								<li class="nav-item">
+									<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+										aria-selected="true">Эконом класс</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+										aria-selected="false">Комфорт класс</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
+										aria-selected="false">Люкс класс</a>
+								</li>
+							</ul>
+							<div class="tab-content calculator__content" id="myTabContent">
+								<div class="tab-pane fade show active calculator__block" id="home" role="tabpanel" aria-labelledby="home-tab">
+									<div class="calculator__wrapper d-flex justify-content-between align-items-center mb-4">
+										<div class="calculator__wrapper-input">
+											<label for="" class="calculator__label">
+												Площадь квартиры:
+											</label>
+											<input type="text" class="calculator__input" placeholder="Введите число">
+										</div>
+										<div class="calculator__wrapper-select">
+											<div class="form">
+												<label class="calculator__label" for="exampleFormControlSelect1">
+													Тип дома:
+												</label>
+												<select class="calculator__select" id="exampleFormControlSelect1">
+													<option>Старый-фонд (комплексный ремонт)</option>
+													<option>Старый-фонд (комплексный ремонт)</option>
+													<option>3</option>
+													<option>4</option>
+													<option>5</option>
+												</select>
+											</div>
+										</div>
+										<div class="calculator__wrapper-select">
+											<div class="form">
+												<label class="calculator__label" for="exampleFormControlSelect2">
+													Демонтаж:
+												</label>
+												<select class="calculator__select" id="exampleFormControlSelect2">
+													<option>Полный (капитальный ремонт)</option>
+													<option>Полный (капитальный ремонт)</option>
+													<option>3</option>
+													<option>4</option>
+													<option>5</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="calculator__wrapper d-flex justify-content-between align-items-center mb-4">
+										<div class="calculator__wrapper-input">
+											<label for="" class="calculator__label">
+												Полотенцесушитель:
+											</label>
+											<input type="text" class="calculator__input" placeholder="Введите число">
+										</div>
+										<div class="calculator__wrapper-select">
+											<div class="form">
+												<label class="calculator__label" for="exampleFormControlSelect1">
+													Ремонт в ванной:
+												</label>
+												<select class="calculator__select" id="exampleFormControlSelect1">
+													<option>Ремонт в ванной не требуется</option>
+													<option>Ремонт в ванной требуется</option>
+													<option>3</option>
+													<option>4</option>
+													<option>5</option>
+												</select>
+											</div>
+										</div>
+										<div class="calculator__wrapper-select">
+											<div class="form">
+												<label class="calculator__label" for="exampleFormControlSelect2">
+													Замена водопровода:
+												</label>
+												<select class="calculator__select" id="exampleFormControlSelect2">
+													<option>Мелкие сантехнические работы</option>
+													<option>Полный (капитальный ремонт)</option>
+													<option>3</option>
+													<option>4</option>
+													<option>5</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="calculator__wrapper d-flex justify-content-between align-items-center mb-5">
+										<div class="calculator__wrapper-input">
+											<label for="" class="calculator__label">
+												Замена радиаторов:
+											</label>
+											<input type="text" class="calculator__input" placeholder="Введите число">
+										</div>
+										<div class="calculator__wrapper-select">
+											<div class="form">
+												<label class="calculator__label" for="exampleFormControlSelect1">
+													Электрика:
+												</label>
+												<select class="calculator__select" id="exampleFormControlSelect1">
+													<option>Полная заменаа электрики</option>
+													<option>Старый-фонд (комплексный ремонт)</option>
+													<option>3</option>
+													<option>4</option>
+													<option>5</option>
+												</select>
+											</div>
+										</div>
+										<div class="calculator__wrapper-select">
+											<div class="form">
+												<label class="calculator__label" for="exampleFormControlSelect2">
+													Замена окон:
+												</label>
+												<select class="calculator__select" id="exampleFormControlSelect2">
+													<option>Замена окон на балконе</option>
+													<option>Полный (капитальный ремонт)</option>
+													<option>3</option>
+													<option>4</option>
+													<option>5</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="row d-flex justify-content-between align-items-center mt-1">
+										<h2 class="calculator__price">Расчитать примерную стоимость комплексного или частичного ремонта</h2>
+										<button class="reviews__btn _calculator__btn">Рассчитать</button>
+									</div>
+									<div class="calc-price mt-3">
+										<div class="calc__price">
+											Общая стоиость ремонта составит: <span class="all__price">139 720 </span>руб.
+										</div>
+										<div class="calc__price">
+											Стоиость ремонта с учетом скидки 10% <span class="all__sale">125 748 </span>руб.
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+									<div class="calculator__wrapper d-flex justify-content-between align-items-center mb-4">
+										<div class="calculator__wrapper-input">
+											<label for="" class="calculator__label">
+												Площадь квартиры:
+											</label>
+											<input type="text" class="calculator__input" placeholder="Введите число">
+										</div>
+										<div class="calculator__wrapper-select">
+											<div class="form">
+												<label class="calculator__label" for="exampleFormControlSelect1">
+													Тип дома:
+												</label>
+												<select class="calculator__select" id="exampleFormControlSelect1">
+													<option>Старый-фонд (комплексный ремонт)</option>
+													<option>Старый-фонд (комплексный ремонт)</option>
+													<option>3</option>
+													<option>4</option>
+													<option>5</option>
+												</select>
+											</div>
+										</div>
+										<div class="calculator__wrapper-select">
+											<div class="form">
+												<label class="calculator__label" for="exampleFormControlSelect2">
+													Демонтаж:
+												</label>
+												<select class="calculator__select" id="exampleFormControlSelect2">
+													<option>Полный (капитальный ремонт)</option>
+													<option>Полный (капитальный ремонт)</option>
+													<option>3</option>
+													<option>4</option>
+													<option>5</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="calculator__wrapper d-flex justify-content-between align-items-center mb-4">
+										<div class="calculator__wrapper-input">
+											<label for="" class="calculator__label">
+												Полотенцесушитель:
+											</label>
+											<input type="text" class="calculator__input" placeholder="Введите число">
+										</div>
+										<div class="calculator__wrapper-select">
+											<div class="form">
+												<label class="calculator__label" for="exampleFormControlSelect1">
+													Ремонт в ванной:
+												</label>
+												<select class="calculator__select" id="exampleFormControlSelect1">
+													<option>Ремонт в ванной не требуется</option>
+													<option>Ремонт в ванной требуется</option>
+													<option>3</option>
+													<option>4</option>
+													<option>5</option>
+												</select>
+											</div>
+										</div>
+										<div class="calculator__wrapper-select">
+											<div class="form">
+												<label class="calculator__label" for="exampleFormControlSelect2">
+													Замена водопровода:
+												</label>
+												<select class="calculator__select" id="exampleFormControlSelect2">
+													<option>Мелкие сантехнические работы</option>
+													<option>Полный (капитальный ремонт)</option>
+													<option>3</option>
+													<option>4</option>
+													<option>5</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="calculator__wrapper d-flex justify-content-between align-items-center mb-5">
+										<div class="calculator__wrapper-input">
+											<label for="" class="calculator__label">
+												Замена радиаторов:
+											</label>
+											<input type="text" class="calculator__input" placeholder="Введите число">
+										</div>
+										<div class="calculator__wrapper-select">
+											<div class="form">
+												<label class="calculator__label" for="exampleFormControlSelect1">
+													Электрика:
+												</label>
+												<select class="calculator__select" id="exampleFormControlSelect1">
+													<option>Полная заменаа электрики</option>
+													<option>Старый-фонд (комплексный ремонт)</option>
+													<option>3</option>
+													<option>4</option>
+													<option>5</option>
+												</select>
+											</div>
+										</div>
+										<div class="calculator__wrapper-select">
+											<div class="form">
+												<label class="calculator__label" for="exampleFormControlSelect2">
+													Замена окон:
+												</label>
+												<select class="calculator__select" id="exampleFormControlSelect2">
+													<option>Замена окон на балконе</option>
+													<option>Полный (капитальный ремонт)</option>
+													<option>3</option>
+													<option>4</option>
+													<option>5</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="row d-flex justify-content-between align-items-center mt-1">
+										<h2 class="calculator__price">Расчитать примерную стоимость комплексного или частичного ремонта</h2>
+										<button class="reviews__btn _calculator__btn">Рассчитать</button>
+									</div>
+									<div class="calc-price mt-3">
+										<div class="calc__price">
+											Общая стоиость ремонта составит: <span class="all__price">139 720 </span>руб.
+										</div>
+										<div class="calc__price">
+											Стоиость ремонта с учетом скидки 10% <span class="all__sale">125 748 </span>руб.
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+									<div class="calculator__wrapper d-flex justify-content-between align-items-center mb-4">
+										<div class="calculator__wrapper-input">
+											<label for="" class="calculator__label">
+												Площадь квартиры:
+											</label>
+											<input type="text" class="calculator__input" placeholder="Введите число">
+										</div>
+										<div class="calculator__wrapper-select">
+											<div class="form">
+												<label class="calculator__label" for="exampleFormControlSelect1">
+													Тип дома:
+												</label>
+												<select class="calculator__select" id="exampleFormControlSelect1">
+													<option>Старый-фонд (комплексный ремонт)</option>
+													<option>Старый-фонд (комплексный ремонт)</option>
+													<option>3</option>
+													<option>4</option>
+													<option>5</option>
+												</select>
+											</div>
+										</div>
+										<div class="calculator__wrapper-select">
+											<div class="form">
+												<label class="calculator__label" for="exampleFormControlSelect2">
+													Демонтаж:
+												</label>
+												<select class="calculator__select" id="exampleFormControlSelect2">
+													<option>Полный (капитальный ремонт)</option>
+													<option>Полный (капитальный ремонт)</option>
+													<option>3</option>
+													<option>4</option>
+													<option>5</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="calculator__wrapper d-flex justify-content-between align-items-center mb-4">
+										<div class="calculator__wrapper-input">
+											<label for="" class="calculator__label">
+												Полотенцесушитель:
+											</label>
+											<input type="text" class="calculator__input" placeholder="Введите число">
+										</div>
+										<div class="calculator__wrapper-select">
+											<div class="form">
+												<label class="calculator__label" for="exampleFormControlSelect1">
+													Ремонт в ванной:
+												</label>
+												<select class="calculator__select" id="exampleFormControlSelect1">
+													<option>Ремонт в ванной не требуется</option>
+													<option>Ремонт в ванной требуется</option>
+													<option>3</option>
+													<option>4</option>
+													<option>5</option>
+												</select>
+											</div>
+										</div>
+										<div class="calculator__wrapper-select">
+											<div class="form">
+												<label class="calculator__label" for="exampleFormControlSelect2">
+													Замена водопровода:
+												</label>
+												<select class="calculator__select" id="exampleFormControlSelect2">
+													<option>Мелкие сантехнические работы</option>
+													<option>Полный (капитальный ремонт)</option>
+													<option>3</option>
+													<option>4</option>
+													<option>5</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="calculator__wrapper d-flex justify-content-between align-items-center mb-5">
+										<div class="calculator__wrapper-input">
+											<label for="" class="calculator__label">
+												Замена радиаторов:
+											</label>
+											<input type="text" class="calculator__input" placeholder="Введите число">
+										</div>
+										<div class="calculator__wrapper-select">
+											<div class="form">
+												<label class="calculator__label" for="exampleFormControlSelect1">
+													Электрика:
+												</label>
+												<select class="calculator__select" id="exampleFormControlSelect1">
+													<option>Полная заменаа электрики</option>
+													<option>Старый-фонд (комплексный ремонт)</option>
+													<option>3</option>
+													<option>4</option>
+													<option>5</option>
+												</select>
+											</div>
+										</div>
+										<div class="calculator__wrapper-select">
+											<div class="form">
+												<label class="calculator__label" for="exampleFormControlSelect2">
+													Замена окон:
+												</label>
+												<select class="calculator__select" id="exampleFormControlSelect2">
+													<option>Замена окон на балконе</option>
+													<option>Полный (капитальный ремонт)</option>
+													<option>3</option>
+													<option>4</option>
+													<option>5</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="row d-flex justify-content-between align-items-center mt-1">
+										<h2 class="calculator__price">Расчитать примерную стоимость комплексного или частичного ремонта</h2>
+										<button class="reviews__btn _calculator__btn">Рассчитать</button>
+									</div>
+									<div class="calc-price mt-3">
+										<div class="calc__price">
+											Общая стоиость ремонта составит: <span class="all__price">139 720 </span>руб.
+										</div>
+										<div class="calc__price">
+											Стоиость ремонта с учетом скидки 10% <span class="all__sale">125 748 </span>руб.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="block">
+				<div class="container">
+					<div class="reviews-block reviews__block block-wrap">
+						<div class="reviews-block__text">
+							<h2 class="reviews-block__title _custom-title">Оставьте заявку на <span class="_span__yellow">бесплатный</span>
+								обратный звонок <span class="underline">прямо сейчас</span></h2>
+							<span class="reviews-block__span">
+								Мы перезвоним Вам в течении 5-ти минут.
+							</span>
+						</div>
+						<div class="reviews-block__btn">
+							<button class="reviews__btn">Оставить заявку</button>
+						</div>
+					</div>
 				</div>
 			</section>
 		</main>
 		<footer class="page-footer">
-					
+			<div class="container">
+				<div class="page-block d-flex justify-content-between">
+					<div class="page-block__item">
+						<h2 class="footer__title">
+							Новости из блога
+						</h2>
+						<ul class="footer-list">
+							<li class="footer-list__item">
+								<a href="#" class="footer-list__link"> 
+									<i class="fas fa-angle-double-right"></i> 
+									Интересная статься про ремонт №1
+								</a>
+							</li>
+							<li class="footer-list__item">
+								<a href="#" class="footer-list__link">
+									<i class="fas fa-angle-double-right"></i>
+									Интересная статься про ремонт №2
+								</a>
+							</li>
+							<li class="footer-list__item"><a href="#" class="footer-list__link">
+								<i class="fas fa-angle-double-right"></i>
+								Интересная статься про ремонт №3</a>
+							</li>
+							<li class="footer-list__item">
+								<a href="#" class="footer-list__link"><i class="fas fa-angle-double-right"></i>
+								Интересная статься про ремонт №4
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="page-block__item">
+						<h2 class="footer__title">
+							Контакты
+						</h2>
+						<ul class="footer-list">
+							<li class="footer-list__item">
+								<div class="footer__email">
+									<a href="mailto:terr-komf@mail.ru" class="footer-list__link">
+										terr-komf@mail.ru
+									</a>
+								</div>
+							</li>
+							<li class="footer-list__item">
+								<div class="link-phone">
+									<a href="tel:+7(812)982-34-11" class="link-phone__link">
+										P: +7 (812) 982-34-11
+									</a>
+									<a href="tel:+7(967)342-83-31" class="link-phone__link">
+										F: +7 (967) 342-83-31
+									</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="page-block__item">
+						<h2 class="footer__title">
+							Адреса
+						</h2>
+						<ul class="footer-list">
+							<li class="footer-list__item">
+								<div class="footer__address">
+									<span class="footer__address-span">99 Barnard St - Suite 111</span>
+									<span class="footer__address-span">United States - GA 22222</span>
+								</div>
+							</li>
+							<li class="footer-list__item">
+								<ul class="footer__socials d-flex align-items-center">
+									<li class="footer__socials-li">
+										Мы в соц-сетях
+									</li>
+									<li class="footer__socials__item">
+										<a href="#">
+											<i class="fab fa-vk"></i>
+										</a>
+									</li>
+									<li class="footer__socials__item">
+										<a href="#">
+											<i class="fab fa-instagram"></i>
+										</a>
+									</li>
+									<li class="footer__socials__item">
+										<a href="#">
+											<i class="fab fa-facebook-f"></i>
+										</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="page-bottom">
+				<div class="container">
+					<div class="page__wrapper d-flex justify-content-between align-items-center">
+						<div class="page__copy">© Все права защищены 2019</div>
+						<div class="page__menu">
+							<nav class="page__nav">
+								<ul class="page-list">
+									<li><a href="#" class="page-list__link">Услуги</a></li>
+									<li><a href="#" class="page-list__link">Преимущества</a></li>
+									<li><a href="#" class="page-list__link">Наши работы</a></li>
+									<li><a href="#" class="page-list__link">Отзывы</a></li>
+									<li><a href="#" class="page-list__link">Контакты</a></li>
+									<li><a href="#" class="page-list__link">Блог</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
 	 	</footer>
 		<script src="js/main.js"></script>
 	</body>

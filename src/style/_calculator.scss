@@ -1,3 +1,150 @@
+.form-control {
+   padding: 0;
+   height: 0;
+   border-radius: 0;
+}
+
 .calculator {
    padding-bottom: 100px;
+   &__title {
+      text-align: center;
+      margin-top: 90px;
+      @include  montserratBold;
+      font-size: 44px;
+      margin-bottom: 60px;
+   }
+   &__content {
+      border: 2px solid #fab702;
+      padding: 50px 70px 30px 70px ;
+   }
+   &__label {  
+      @include robotoRegular;
+      font-size: 12px;
+      color: #3b404f;
+      display: block;
+      margin-bottom: 8px;
+   }
+   &__input {
+      display: block;
+      max-width: 160px;
+      border: 2px solid #fab702;
+      padding: 18px 0;
+      padding-left: 9px;
+      &::placeholder {
+         font-size: 12px;
+         color: #bababb;
+      } 
+   }
+   &__select {
+      border: 2px solid #fab702;
+      padding: 18px 0;
+      padding-left: 9px;
+      padding-right: 90px;
+      max-width: 282px;
+      font-size: 12px;
+      outline: none;
+      position: relative;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      &::placeholder {
+         font-size: 12px;
+         color: #bababb;
+      }
+      option {
+         padding: 18px 0;
+         padding-left: 9px;
+         position: relative;
+         
+      }
+   }
+   &__price {
+      font-size: 17px;
+      @include robotoMedium;
+      color: #fab702;
+      position: relative;
+      margin-left: 15px;
+      text-transform: uppercase;
+      &:after {
+         content: '';
+         height: 2px;
+         position: absolute;
+         bottom: 10px;
+         right: 0;
+         width: 100%;
+         background-color: #fab702;
+      }
+   }
+}
+
+._calculator__btn {
+   margin-right: 10px;
+   max-width: 165px;
+   font-size: 14px;
+   @include robotoMedium;
+   transition: 0.3s;
+}
+
+.form {
+   position: relative;
+   &:after {
+      content: '';
+      background: url("../img/currentSelect.png") center no-repeat;
+      width: 12px;
+      height: 6px;
+      position: absolute;
+      right: 10px;
+      bottom: 25px;
+   }
+}
+.all {
+   &__price, &__sale {
+      font-size: 24px;
+      @include robotoMedium;
+      font-weight: 800;
+   }
+}
+.calc {
+   &-price {
+      color: #3b404f;
+   }
+   &__price {
+      font-size: 21px;
+      @include robotoMedium;
+      margin-bottom: 15px;
+      &:last-child {
+         margin-bottom: 0;
+      }
+   }
+   &-wrapper {
+      padding: 0 44px;
+   }
+   ul.nav {   
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 34px;
+      li.nav-item {
+         background-color: #fab702;
+         margin-right: 26px;
+         &:last-child {
+            margin-right: 0;
+         }
+         .nav-link {
+            padding: 18px 34px;
+            color: #fff;
+            @include robotoMedium;
+            font-size: 14px;
+         }
+          .active {
+            background-color: #3b404f;
+            color: #fff;
+         }
+      }
+   }
+}
+
+.block-wrap {
+   margin-top: 0;
+   margin-bottom: 95px;
 }

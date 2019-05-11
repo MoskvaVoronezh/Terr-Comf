@@ -1,0 +1,162 @@
+.page {
+   &-footer {
+      padding-top: 90px;
+      background-color: #252c3a;
+   }
+   &__wrapper {
+      margin-top: 65px;
+   }
+   &__copy {
+      padding-top: 15px;
+      font-size: 13px;
+      color: #fff;
+   }
+   &__menu {
+      padding-top: 15px;
+   }
+   &-bottom {
+      background-color:#4c5b6d;
+      padding-bottom: 15px;
+   }
+   &-list {
+      display: flex;
+      flex-wrap: wrap;
+      li {
+         margin-right: 30px;
+         &:last-child {
+            margin-right: 0;
+         }
+      }
+      &__link {
+         color: #fff;
+         font-size: 13px;
+         &:hover {
+            color: #fab702;
+         }
+      }
+   }
+   
+}
+
+.footer {
+   &__title {
+      color: #fff;
+      font-size: 14px;
+      @include robotoRegular;
+      margin-bottom: 40px;
+      line-height: 14px;
+   }
+   &-list {
+      margin: 0;
+      padding: 0;
+      &__item {
+         border-bottom: 1px solid #303744;
+         padding-bottom: 15px;
+         margin-bottom: 15px;
+         &:last-child {
+            margin-bottom: 0;
+         }
+      }
+      &__link {
+         color: #fff;
+         font-size: 13px;
+         @include robotoRegular;
+         &:hover {
+            color: #fab702;
+         }
+      }
+   }
+   &__address {
+      position: relative;
+      padding-left: 35px;
+       &:after {
+         content: "";
+         display: block;
+         position: absolute;
+         top: 50%;
+         left: 0;
+         background: url("../img/adress-bar.png") center no-repeat;
+         width: 20px;
+         height: 15px;
+         margin-top: -7px;
+      }
+      &-span {
+         display: block;
+         color: #fff;
+      }
+   }
+   &__email {
+      padding-left: 30px;
+      position: relative;
+      &:after {
+         content: "";
+         display: block;
+         position: absolute;
+         top: 50%;
+         left: 0;
+         background: url("../img/gmailwhite.png") center no-repeat;
+         width: 20px;
+         height: 15px;
+         margin-top: -7px;
+      }
+   }
+   &__socials {
+      &-li {
+         color: #fff;
+         margin-right: 10px;
+      }
+      &__item {
+         margin-right: 10px;
+         &:last-child {
+            margin-right: 0;
+         }
+         a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background-color: #fff;
+            color: #252c3a;
+            font-size: 11px;
+            height: 20px;
+            width: 20px;
+            &:hover {
+               background-color: #fab702;
+               cursor: pointer;
+            }
+            i {
+               color: #252c3a;
+            }
+         }
+      }
+   }
+}
+
+.link {
+   &-phone {
+      position: relative;
+      padding-left: 30px;
+      &:after {
+         content: "";
+         display: block;
+         position: absolute;
+         top: 50%;
+         left: 0;
+         background: url("../img/phonewhite.png") center no-repeat;
+         width: 15px;
+         height: 15px;
+         margin-top: -7px;
+      }
+      &__link {
+         display: block;
+         color: #fff;
+         margin-bottom: 10px;
+         &:last-child {
+            margin-bottom: 0;
+         }
+         &:hover {
+            color: #fab702;
+         }
+      }
+   }
+}
