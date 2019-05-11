@@ -53,6 +53,28 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-Black.eot');
+	src: local('Montserrat Black'), local('Montserrat-Black'),
+		url('../fonts/Montserrat-Black.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Montserrat-Black.woff') format('woff'),
+		url('../fonts/Montserrat-Black.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('Montserrat-Medium.eot');
+	src: local('Montserrat Medium'), local('Montserrat-Medium'),
+		url('Montserrat-Medium.eot?#iefix') format('embedded-opentype'),
+		url('Montserrat-Medium.woff') format('woff'),
+		url('Montserrat-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
 @mixin robotoRegular {
 	font-family: 'Roboto', sans-serif;
 	font-weight: normal;
@@ -77,5 +99,10 @@
 	font-family: 'Montserrat';
 	font-weight: 900;
 	font-style: normal;
+}
+
+@mixin MontserratMedium {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
 }
 
