@@ -12,6 +12,7 @@
 @import "sentenceLine";
 @import "reviews";
 @import "banner";
+@import "calculator";
 @import "footer";
 
 
@@ -46,9 +47,6 @@ h4 {
 }
 
 a {
-	display: block;
-	text-decoration: none;
-	color: #fff;
 	&:hover{
 		text-decoration: none;
 		cursor: pointer;
