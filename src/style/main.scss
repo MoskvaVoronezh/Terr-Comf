@@ -15,6 +15,8 @@
 @import "banner";
 @import "calculator";
 @import "footer";
+@import "blog";
+@import "contacs";
 
 
 body {
@@ -314,12 +316,80 @@ nav.navbar-light .navbar-nav .nav-link {
   }
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+  .calculator {
+    &__wrapper {
+      flex-direction: column;
+      justify-content: center;
+      &-input {
+        min-width: 282px;
+        margin-bottom: 10px;
+      }
+    }
+    &__input {
+      min-width: 282px;
+      padding: 16px 0;
+      padding-left: 9px;
+    }
+    &__select {
+      margin-bottom: 10px;
+    }
+    &__price {
+      font-size: 18px;
+      line-height: 18px;
+      margin-bottom: 10px;
+      text-align: center;
+      &:after {
+        display: none;
+      }
+    }
+    ._calculator__btn {
+      margin: 0 auto;
+    }
+  }
+  .form {
+    &:after {
+        bottom: 35px;
+    }
+  }
+}
 @media only screen and (max-width: 992px) {
 	.nav{
 		&-item{
-			text-align: center;
-		}
-	}
+      text-align: center;
+    }
+    &-link {
+      &:hover {
+        margin: 0 auto;
+        max-width: 150px;
+      }
+    }
+  }
+  .wallpaper {
+    &__img {
+      width: 100%;
+      height: 100%;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    &-text {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      h3 {
+        font-size: 18px;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .reviews {
+    &__btn-btn {
+      margin-top: 20px;
+    }
+  }
+  
 }
 @media only screen and (max-width: 870px) {
   .sentence-line {
@@ -338,6 +408,86 @@ nav.navbar-light .navbar-nav .nav-link {
   }
 }
 @media only screen and (max-width: 768px) {
+  .calculator__title {
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .banner {
+    &-discount {
+      .discount__title {
+        font-size: 45px;
+      }
+      .discount__box-box {
+        font-size: 35px;
+      }
+      .discount__procent {
+        font-size: 50px;
+      }
+    }
+    &__subtitle {
+      font-size: 22px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+  .portfolio{
+    margin-bottom: 10px;
+  }
+  ._jobs {
+    margin: 40px 0;
+  }
+  .reviews {
+    &__title {
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+  }
+  h2 {
+    font-size: 24px;
+  }
+  .slider-line .introduction {
+    h1 {
+      font-size: 35px;
+    }
+    b {
+      font-size: 25px;
+      margin-bottom: 10px;
+    }
+  }
+  .calc-wrapper {
+    padding: 0;
+  }
+  .calculator {
+    &__wrapper {
+      flex-direction: column;
+      justify-content: center;
+      &-input {
+        min-width: 282px;
+        margin-bottom: 10px;
+      }
+    }
+    &__input {
+      min-width: 282px;
+      padding: 16px 0;
+      padding-left: 9px;
+    }
+    &__select {
+      margin-bottom: 10px;
+    }
+    &__price {
+      font-size: 18px;
+      line-height: 18px;
+      margin-bottom: 10px;
+      text-align: center;
+      &:after {
+        display: none;
+      }
+    }
+    ._calculator__btn {
+      margin: 0 auto;
+    }
+  }
   .services {
     img{
       height: 100px;
@@ -352,6 +502,77 @@ nav.navbar-light .navbar-nav .nav-link {
   }
 }
 @media only screen and (max-width: 576px) {
+  .page__menu {
+    display: none;
+  }
+  .footer__title { 
+    margin-bottom: 20px;
+  }
+  .calc {
+    ul.nav {
+      flex-direction: column;
+      li.nav-item {
+        margin-bottom: 10px;
+        width: 180px;
+        margin-right: 0;
+        a.nav-link {
+          width: 100%;
+          max-width: 180px;
+        }
+      }
+    }
+  }
+  .banner {
+    &__wrap {
+      max-height: 500px;
+    }
+    &-discount {
+      .discount__title {
+        font-size: 25px;
+        margin-right: 10px;
+      }
+      .discount__box {
+        height: 50px;
+        width: 50px;
+        margin-right: 10px;
+      }
+      .discount__box-box {
+        font-size: 15px;
+      }
+      .discount__procent {
+        font-size: 30px;
+      }
+    }
+    &__subtitle {
+      font-size: 22px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    &-slider {
+      &__item {
+        max-height: 500px;
+      }
+    }
+  }
+  .page {
+    &-footer {
+      padding-top: 20px;
+      padding-bottom: 0;
+    }
+    &-block {
+      flex-direction: column;
+      &__item {
+        margin-bottom: 20px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+    &-bottom {
+      margin-top: -30px;
+    }
+  }
+
   .sentence-line {
     .sentence {
       justify-content: center;

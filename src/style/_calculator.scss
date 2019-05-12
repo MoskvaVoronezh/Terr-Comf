@@ -147,3 +147,9 @@
    margin-top: 0;
    margin-bottom: 95px;
 }
+
+@media screen and (max-width: 768px) {
+   .form:after {
+      top: 53px;
+   }
+}

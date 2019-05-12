@@ -1,0 +1,172 @@
+._bg-grey {
+   background-color: #f5f5f5;
+}
+
+._contacs-padding {
+   margin-bottom: 15px;
+   a {
+      padding-left: 10px;
+   }
+}
+.contacs {
+   padding-top: 50px;
+   padding-bottom: 70px;
+   &__wrap {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+   }
+   &__card {
+      max-width: 320px;
+      background-color: #f5f5f5;
+      padding-top: 30px;
+      padding-left: 30px;
+      padding-bottom: 20px;
+      padding-right: 70px;
+      box-shadow: 0 0 4px 4px #eaeaea;
+   }
+   &__title {
+      color: #696969;
+      font-size: 14px;
+      @include robotoBold;
+   }
+   &__address {
+      max-width: 200px;
+      margin-bottom: 33px;
+   }
+   &__socials {
+      display: flex;
+      span {
+         margin-right: 15px;
+      }
+   }
+   &__map {
+      box-shadow: 0 0 4px 4px #eaeaea;
+      max-height: 290px;
+   }
+}
+
+.contacs {
+   &-form {
+      padding-left: 150px;
+      padding-top: 55px;
+      padding-bottom: 35px;
+      background-size: cover;
+      background: url("../img/Blog-series-2_-Real-time-payments.jpg") center no-repeat;
+      margin-bottom: 70px;
+      &__title {
+         font-size: 33px;
+         @include robotoBold;
+         color: #3b404f;
+         position: relative;
+         margin-bottom: 55px;
+         &:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            width: 300px;
+            height: 2px;
+            background-color: #fab702;
+            display: block;
+         }
+      }
+   }
+   &-forms {
+      max-width: 800px;
+      background: url("../img/bgg-form.png") center center no-repeat;
+      background-size: cover;
+   }
+}
+
+.form {
+   &-contacs {
+      position: relative;
+      padding: 30px 15px;
+      &:after {
+         content: "";
+         position: absolute;
+         display: block;
+         background: url("../img/iphone.png") center no-repeat;
+         top: 0;
+         bottom: 0;
+         right: 0px;
+         width: 450px;
+         height: 100%;
+         z-index: 2;
+      }
+      &__input {
+         margin-bottom: 30px;
+         &:last-child {
+            margin-bottom: 60px;
+         }
+         input {
+            min-width: 250px;
+            padding: 16px 0;
+            padding-left: 20px;
+            &::placeholder {
+               font-size: 16px;
+            }
+         }
+      }
+      &__textarea {
+         margin-bottom: 30px;
+         textarea {
+            min-width: 320px; 
+            min-height: 110px;
+            padding: 20px;
+            color: #000;
+            &::placeholder {
+               color: #696969;
+               font-size: 16px;
+            }
+         }
+      }
+      &__submit {
+         max-width: 160px;
+         color: #fff;
+         background-color: #3b404f;
+         border: none;
+         &:hover {
+            color: #fab702;
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 1060px) {
+   .contacs {
+      &__card {
+         margin-bottom: 30px;
+      }
+   }
+}
+
+@media screen and (max-width: 992px) {
+   .contacs {
+      &-form {
+         padding-left: 0;
+      }
+   }
+   .contacs__map {
+      width: 100%;
+      iframe {
+         width: 100%;
+      }
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .form-contacs:after {
+      display: none;
+   }
+}
+
+@media screen and (max-width: 576px) {
+   .form-contacs__textarea {
+      textarea {
+         min-width: 250px;
+         width: 80%;
+      }
+   }
+}
