@@ -97,6 +97,12 @@
    }
 }
 
+.blog-list_active {
+   &:after {
+      background: url("../img/external-link-symbol1.png") center no-repeat;
+   }
+}
+
 .sublist {
    display: none;
    margin-top: 10px;

@@ -502,6 +502,12 @@ nav.navbar-light .navbar-nav .nav-link {
   }
 }
 @media only screen and (max-width: 576px) {
+  .calc__price {
+    font-size: 14px;
+  }
+  .calculator__price {
+    font-size: 14px;
+  }
   .page__menu {
     display: none;
   }
@@ -528,7 +534,7 @@ nav.navbar-light .navbar-nav .nav-link {
     }
     &-discount {
       .discount__title {
-        font-size: 25px;
+        font-size: 30px;
         margin-right: 10px;
       }
       .discount__box {
@@ -537,7 +543,7 @@ nav.navbar-light .navbar-nav .nav-link {
         margin-right: 10px;
       }
       .discount__box-box {
-        font-size: 15px;
+        font-size: 25px;
       }
       .discount__procent {
         font-size: 30px;
