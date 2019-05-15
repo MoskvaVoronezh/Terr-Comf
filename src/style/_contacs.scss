@@ -133,7 +133,13 @@
       }
    }
 }
-
+.form-contacs__input ._input_blog {
+   padding-left: 0;
+   &:hover {
+      background-color: rgba(#3b404f, 0.9);
+      color: #fff;
+   }
+}
 @media screen and (max-width: 1060px) {
    .contacs {
       &__card {

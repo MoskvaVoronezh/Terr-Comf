@@ -13,6 +13,8 @@
 	<link rel="icon" href="img/favicon/favicon.ico">
 	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
 	<!-- Custom Browsers Color End -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+		integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/main.css">
 
 </head>
@@ -374,7 +376,7 @@
 							</span>
 						</div>
 						<div class="reviews-block__btn">
-							<button class="reviews__btn reviews__btn-btn">Оставить заявку</button>
+							<button class="reviews__btn reviews__btn-btn _linkHover">Оставить заявку</button>
 						</div>
 					</div>
 				</div>
@@ -403,7 +405,7 @@
 										<div class="banner__subtitle">На все виды работ при
 											комплексном ремонте!</div>
 										<div class="banner__button">
-											<button class="reviews__btn">Оставить заявку</button>
+											<button class="reviews__btn _linkHover">Оставить заявку</button>
 										</div>
 									</div>
 								</div>
@@ -432,7 +434,7 @@
 										<div class="banner__subtitle">На все виды работ при
 											комплексном ремонте!</div>
 										<div class="banner__button">
-											<button class="reviews__btn">Оставить заявку</button>
+											<button class="reviews__btn _linkHover">Оставить заявку</button>
 										</div>
 									</div>
 								</div>
@@ -519,22 +521,22 @@
 								</li>
 							</ul>
 							<div class="tab-content calculator__content" id="myTabContent">
-								<div class="tab-pane fade show active calculator__block" id="home" role="tabpanel" aria-labelledby="home-tab">
+									<div class="tab-pane fade show active calculator__block" id="home" role="tabpanel" aria-labelledby="home-tab">
 									<div class="calculator__wrapper d-flex justify-content-between align-items-center mb-4">
 										<div class="calculator__wrapper-input">
 											<label for="" class="calculator__label">
 												Площадь квартиры:
 											</label>
-											<input type="text" class="calculator__input" placeholder="Введите число">
+											<input type="text" data-price="2070" name="square-one" class="calculator__input" placeholder="Введите число">
 										</div>
 										<div class="calculator__wrapper-select">
 											<div class="form">
 												<label class="calculator__label" for="exampleFormControlSelect1">
 													Тип дома:
 												</label>
-												<select class="calculator__select" id="exampleFormControlSelect1">
-													<option>Старый-фонд (комплексный ремонт)</option>
-													<option>Выборочный ремонт</option>
+												<select class="calculator__select" name="home_type" id="exampleFormControlSelect1">
+													<option data-price="0">Новостройка (комплексный ремонт)</option>
+													<option data-price="11500">Старый-фонд (комплексный ремонт)</option>					
 												</select>
 											</div>
 										</div>
@@ -543,14 +545,11 @@
 												<label class="calculator__label" for="exampleFormControlSelect2">
 													Демонтаж:
 												</label>
-												<select class="calculator__select" id="exampleFormControlSelect2">
-													<option>Демонтаж бра</option>
-													<option>Демонтаж точечного светильника</option>
-													<option>Демонтаж люстры</option>
-													<option>Демонтаж эл.точки (розетка,выключатель)</option>
-													<option>Демонтаж электро-автомата</option>
-													<option>Демонтаж, монтаж электро-счетчика</option>
-													<option>Демонтаж, монтаж эл.щитка</option>
+												<select class="calculator__select" name="dismantling" id="exampleFormControlSelect2">
+													<option data-price="0">Нет</option>
+													<option data-price="3450">Минимальный (обои, покрытие пола)</option>
+													<option data-price="5750">Средне (не большой объем работ)</option>
+													<option data-price="11500">Полный (Старый фонд капитальный ремонт)</option>
 												</select>
 											</div>
 										</div>
@@ -558,18 +557,19 @@
 									<div class="calculator__wrapper d-flex justify-content-between align-items-center mb-4">
 										<div class="calculator__wrapper-input">
 											<label for="" class="calculator__label">
-												Полотенцесушитель:
+												Замена Полотенцесушителя:
 											</label>
-											<input type="text" class="calculator__input" placeholder="Введите число">
+											<input type="text" class="calculator__input" name="replace_warmer" data-price="4025" placeholder="Введите число">
 										</div>
 										<div class="calculator__wrapper-select">
 											<div class="form">
 												<label class="calculator__label" for="exampleFormControlSelect1">
 													Ремонт в ванной:
 												</label>
-												<select class="calculator__select" id="exampleFormControlSelect1">
-													<option>Ремонт в ванной не требуется</option>
-													<option>Ремонт в ванной требуется</option>
+												<select class="calculator__select" name="repair_bathroom" id="exampleFormControlSelect1">
+													<option data-price="0">Нет</option>
+													<option data-price="23000">Ванная + санузел (совмещенный)</option>
+													<option  data-price="28750">Ванная + санузел (Разделенный)</option>
 												</select>
 											</div>
 										</div>
@@ -578,12 +578,11 @@
 												<label class="calculator__label" for="exampleFormControlSelect2">
 													Замена водопровода:
 												</label>
-												<select class="calculator__select" id="exampleFormControlSelect2">
-													<option>Мелкие сантехнические работы</option>
-													<option>Полный (капитальный ремонт)</option>
-													<option>3</option>
-													<option>4</option>
-													<option>5</option>
+												<select class="calculator__select" name="replace_water" id="exampleFormControlSelect2">
+													<option data-price="0">Нет</option>
+													<option data-price="17250">Новый водопровод (новостройка)</option>
+													<option data-price="23000">Новый водопровод (старый фонд)</option>
+													<option data-price="3450">Мелкие сантехнические работы</option>
 												</select>
 											</div>
 										</div>
@@ -593,60 +592,39 @@
 											<label for="" class="calculator__label">
 												Замена радиаторов:
 											</label>
-											<input type="text" class="calculator__input" placeholder="Введите число">
+											<input type="text" name="radio_replace" data-price="4250" class="calculator__input" placeholder="Введите число">
 										</div>
 										<div class="calculator__wrapper-select">
 											<div class="form">
 												<label class="calculator__label" for="exampleFormControlSelect1">
 													Электрика:
 												</label>
-												<select class="calculator__select" id="exampleFormControlSelect1">
-													<option>Устройство гнезда подрозетника</option>
-													<option>Монтаж розетки</option>
-													<option>Монтаж выключателя</option>
-													<option>Монтаж сетевой розетки на эл.плиту</option>
-													<option>Монтаж силовой розетки</option>
-													<option>Монтаж телефонной / ТВ розетки / Интернет</option>
-													<option>Перенос электро-счетчика</option>
-													<option>Устройство гнезда под эл.щиток (в кирпичной стене)</option>
-													<option>Устройство гнезда под эл.щиток (в жб стене)</option>
-													<option>Подключение трансформатора</option>
-													<option>Монтаж светодиодной ленты</option>
-													<option>Устройство точечного светильника</option>
-													<option>Монтаж электрического полотенцесушителя</option>
-													<option>Монтаж распределительной коробки</option>
-													<option>Монтаж распределительной коробки</option>
+												<select class="calculator__select" name="electric" id="exampleFormControlSelect1">
+													<option data-price="0">Нет</option>
+													<option data-price="3450">Минимально (замена розеток, кабель TV)</option>
+													<option data-price="11500">Частичная замена электропроводки</option>
+													<option data-price="17250">Полная замена электропроводки</option>						
 												</select>
 											</div>
 										</div>
-										<div class="calculator__wrapper-select">
-											<div class="form">
-												<label class="calculator__label" for="exampleFormControlSelect2">
-													Замена окон:
-												</label>
-												<select class="calculator__select" id="exampleFormControlSelect2">
-													<option>Замена окон на балконе</option>
-													<option>Полный (капитальный ремонт)</option>
-													<option>3</option>
-													<option>4</option>
-													<option>5</option>
-												</select>
-											</div>
+										<div class="calculator__wrapper-input">
+											<button class="reviews__btn _calculator__btn _linkHover button-price">Рассчитать</button>
 										</div>
 									</div>
 									<div class="row d-flex justify-content-between align-items-center mt-1">
 										<h2 class="calculator__price">Расчитать примерную стоимость комплексного или частичного ремонта</h2>
-										<button class="reviews__btn _calculator__btn">Рассчитать</button>
+										
 									</div>
 									<div class="calc-price mt-3">
 										<div class="calc__price">
-											Общая стоиость ремонта составит: <span class="all__price">139 720 </span>руб.
+											Общая стоиость ремонта составит: <span class="all__price"></span>&nbsp;<span class="rybl">руб.</span>
 										</div>
 										<div class="calc__price">
-											Стоиость ремонта с учетом скидки 10% <span class="all__sale">125 748 </span>руб.
+											Стоиость ремонта с учетом скидки 10% <span class="all__sale"></span>&nbsp;<span class="rybl">руб.</span>
 										</div>
 									</div>
-								</div>
+									</div>
+								
 								<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
 									<div class="calculator__wrapper d-flex justify-content-between align-items-center mb-4">
 										<div class="calculator__wrapper-input">
@@ -907,7 +885,7 @@
 							</span>
 						</div>
 						<div class="reviews-block__btn">
-							<button class="reviews__btn reviews__btn-btn">Оставить заявку</button>
+							<button class="reviews__btn reviews__btn-btn _linkHover">Оставить заявку</button>
 						</div>
 					</div>
 				</div>

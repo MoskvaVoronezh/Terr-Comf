@@ -1,5 +1,5 @@
 @import "bootstrap.min";
-@import "all.css";
+/* @import "all.css";*/
 @import "../../node_modules/slick-carousel/slick/slick-theme.css";
 @import "../../node_modules/slick-carousel/slick/slick.css";
 @import "../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css";
@@ -103,6 +103,16 @@ h3 {
 	background-color: #fab702;
   color: #fff;
   margin-top: 31px;
+  &:hover {
+    background-color: rgba(#fab702, 0.8);
+    color: #fff;
+  }
+}
+._linkHover {
+  &:hover {
+    background-color: rgba(#fab702, 0.8);
+    color: #fff;
+  }
 }
 .bg-color {
   background-color: #f5f5f5;
@@ -140,7 +150,21 @@ h3 {
     }
   }
 }
-
+.rybl {
+  display: none;
+}
+._rybl_active {
+  display: inline;
+}
+.calculator__select {
+  max-width: 283px;
+}
+.button-price {
+  min-width: 282px;
+  margin-right: 0;
+  margin-top: 26px;
+  padding: 19px 0;
+}
 .contacts {
   &__item{
     font-family: "Roboto";

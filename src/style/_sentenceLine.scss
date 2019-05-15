@@ -24,4 +24,27 @@
 	color: #fab702;
 	border-radius: 0;
 	padding: 17px 11px;
+	transition: 0.3s;
+	&:hover {
+		background-color: #3b404f;
+    	color: #fff
+	}
+}
+
+.reviews__btn-btn {
+	transition: 0.3s;
+}
+.reviews__btn {
+	transition: 0.3s;
+}
+
+.page-list__link {
+	transition: 0.3s;
+}
+
+._click-link {
+	transition: 0.3s;
+}
+.link-phone__link {
+	transition: 0.3s;
 }
